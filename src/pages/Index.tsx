@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Phone, Mail, MapPin, Clock, ArrowDown, FileText, Info, Tool, Zap, Menu, X } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, ArrowDown, FileText, Info, Wrench, Zap, Menu, X } from "lucide-react";
 
 const Index = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -45,7 +45,7 @@ const Index = () => {
               onClick={() => scrollToSection("products")}
               className="text-left py-2 px-4 text-blue-700 hover:bg-blue-50 rounded-md flex items-center gap-2"
             >
-              <Tool size={18} /> Продукция
+              <Wrench size={18} /> Продукция
             </button>
             <button 
               onClick={() => scrollToSection("advantages")}
@@ -90,7 +90,7 @@ const Index = () => {
               onClick={() => scrollToSection("products")}
               className={`text-left py-2 px-4 ${activeSection === "products" ? "bg-blue-50 text-blue-800" : "text-gray-700"} hover:bg-blue-50 rounded-md flex items-center gap-2 transition-colors`}
             >
-              <Tool size={18} /> Продукция
+              <Wrench size={18} /> Продукция
             </button>
             <button 
               onClick={() => scrollToSection("advantages")}
@@ -168,7 +168,7 @@ const Index = () => {
           {/* Продукция - заголовок */}
           <div id="products" className="pt-4">
             <h2 className="text-2xl font-semibold text-blue-700 flex items-center mb-4">
-              <Tool className="mr-2 text-blue-500" size={24} />
+              <Wrench className="mr-2 text-blue-500" size={24} />
               Наша продукция
             </h2>
           </div>

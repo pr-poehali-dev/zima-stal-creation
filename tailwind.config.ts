@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,14 +63,15 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				blue: {
-					50: '#EFF6FF',
-					100: '#DBEAFE',
-					500: '#3B82F6',
-					600: '#2563EB',
-					700: '#1D4ED8',
-					800: '#1E40AF'
-				}
+				slate: {
+					50: '#f8fafc',
+					100: '#f1f5f9',
+					200: '#e2e8f0',
+					500: '#64748b',
+					600: '#475569',
+					700: '#334155',
+					800: '#1e293b'
+				},
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
